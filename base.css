@@ -1,0 +1,278 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean');
+/*-------------------------------------------------*/
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+	color: #999999;
+	text-decoration: none;
+}
+a:hover {
+	color: #09585D;
+}
+li {list-style-type: none;}
+#white_space {
+	height: 50px;
+}
+#wrapper {
+	position: relative;
+	width: 960px;
+	min-height: 100%;
+	margin: 0 auto;
+	background: #ffffff;
+	color: black;
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: left;
+}
+.wrap {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 38px;
+}
+body h2 {
+	font-size: 13px;
+}
+body .title {
+	float: left;
+}
+body .date {
+	float: right;
+}
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	width: 100%;
+	height: 30px;
+	padding-top: 25px;
+}
+#header #logo {
+	float: left;
+	padding-left: 35px;
+}
+#header #logo a {
+	display: block;
+	width: 258px;
+	height: 30px;
+	background: url(./image/logo.png) no-repeat left center;
+}
+#header #hamburger {
+	display: none;
+}
+/*------------------------ nav_area --------------------------*/
+#nav_area {
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	width: 180px;
+	height: 100%;
+	padding-top: 50px;
+	padding-left: 38px;
+}
+#nav_area #nav_box {
+	padding-top: 38px;
+}
+#nav_area #nav_sell {
+	position: relative;
+}
+#nav_area #nav_sell li a {
+	display: inline-block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-size: 10px;
+	line-height: 1;
+	letter-spacing: 0.35em;
+}
+#nav_area #nav_sell li .sNav {
+	display: none;
+}
+#nav_area #nav_sell + .sNav ul {
+	display: none;
+	padding: 15px 0 0 60px;
+}
+#nav_area .sNav ul li a {
+	display: inline-block;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	font-size: 10px;
+	line-height: 1;
+	letter-spacing: 0.12em;
+}
+#container {
+	position: relative;
+	padding: 102px 38px 40px 218px;
+	background: #ffffff;
+}
+#container img {
+	max-width: 100%;
+	height: auto;
+}
+.scrollfade {
+	display: block;
+}
+
+/*---------------------- 맥스980까지 ---------------------------*/
+@media only screen and (max-width:960px) {
+	/* wrapper */
+	#wrapper {
+		width: auto;
+		max-width: 960px;
+	}
+	.wrap {
+		width: auto;
+	}
+}
+
+/*---------------------- 미니멈981부터 ---------------------------*/
+@media only screen and (min-width:961px) {
+	/* wrapper */
+	#wrapper {
+		width: auto;
+		max-width: 960px;
+	}
+	.wrap {
+		width: auto;
+		max-width: 940px;
+	}
+}
+
+/*---------------------- 맥스500까지(모바일) ---------------------------*/
+@media only screen and (max-width:500px) {
+	.wrap {
+		margin: 0 25px;
+		padding: 0;
+	}
+	#header {
+		position: fixed;
+		height: auto;
+		padding: 21px 0;
+		background: #ffffff;
+	}
+	#header #logo {
+		position: absolute;
+		top: 10px;
+		left: 120px;
+		float: none;
+		margin: 0px;
+	}
+	#header #logo a {
+		width: 190px;
+		height: 30px;
+
+		background-size: 190px auto;
+	}
+	#header #hamburger {
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		top: 7px;
+		left: 35px;
+		width: 30px;
+		height: 30px;
+		background: url(./image/hamb.png) no-repeat left top;
+
+		cursor: pointer;
+	}
+	#nav_area {
+		display: none;
+		overflow: auto;
+		z-index: 1 !important;
+		width: 190px;
+		padding-left: 0;
+		background: #fafafa;
+	}
+	#nav_area #nav_box {
+		position: relative;
+		min-height: 100%;
+		padding-top: 0;
+	}
+	#nav_area li a:hover {
+		padding-left: 0;
+	}
+	#nav_area #nav_sell {
+		position: static;
+		padding: 16px 0 122px 25px;
+	}
+	#nav_area #nav_sell li a {
+		display: block;
+		padding: 10px 0 9px;
+		font-size: 11px;
+	}
+	#nav_area #nav_sell li .sNav {
+		display: block;
+	}
+	#nav_area #nav_sell li .sNav ul {
+		display: none;
+		padding: 14px 0 24px 27px;
+	}
+	#nav_area #nav_sell li .sNav ul li a {
+		display: block;
+		padding: 7px 0;
+		font-size: 11px;
+		line-height: 1;
+		letter-spacing: 0.12em;
+	}
+	#nav_area .ancNav li.on a {
+		margin-left: 0;
+	}
+	#container {
+		z-index: 2;
+		padding: 58px 25px 52px;
+		background: #ffffff;
+	}
+}
+
+
+
+
+
+
+		li {
+			list-style-type: none;
+		}
+		#page {
+			width:980px;
+			margin:0 auto;
+		}
+		footer {
+			padding:20px 0 0 15px;
+			color:#666666;
+			text-align: right;
+		}
+		footer #address {
+			float:right;
+		}
+		footer #link {
+			float:right;
+		}
+		footer #footer_menu li {
+			margin-top:5px;
+		}
+		footer #company_info {
+			margin-top:20px;
+		}
+		footer #company_info li {
+			margin-top:2px;
+		}
+		footer #copyright {
+			margin-top:10px;
+			font-size:11px;
+			color:#09585D;
+		}
+		footer #link h3 {
+			font-size:16px;
+			color:#f39200;
+		}
+		footer #link select {
+			margin:5px 0 0 50px;
+			width:100px;
+			height:18px;
+			font-size:11px;
+		}
+		footer #icons {
+			margin-top:5px;
+			text-align:right;
+		}
